@@ -108,17 +108,17 @@
 
 
 
-  <meta name="description" content="find using port  netstat -lntp">
+  <meta name="description" content="install1bash &amp;lt;(curl -L -s https://install.direct/go.sh)  remove default conf file and replace with a new one   remove  1sudo rm /etc/v2ray/config.json  create a new one  Online Create conf 1nano /e">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux Command">
-<meta property="og:url" content="http://yoursite.com/2018/08/10/Linux Command line/index.html">
+<meta property="og:title" content="v2ray">
+<meta property="og:url" content="http://yoursite.com/2018/08/17/v2ray/index.html">
 <meta property="og:site_name" content="See the out">
-<meta property="og:description" content="find using port  netstat -lntp">
+<meta property="og:description" content="install1bash &amp;lt;(curl -L -s https://install.direct/go.sh)  remove default conf file and replace with a new one   remove  1sudo rm /etc/v2ray/config.json  create a new one  Online Create conf 1nano /e">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-10T15:41:05.674Z">
+<meta property="og:updated_time" content="2018-08-17T06:45:08.477Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux Command">
-<meta name="twitter:description" content="find using port  netstat -lntp">
+<meta name="twitter:title" content="v2ray">
+<meta name="twitter:description" content="install1bash &amp;lt;(curl -L -s https://install.direct/go.sh)  remove default conf file and replace with a new one   remove  1sudo rm /etc/v2ray/config.json  create a new one  Online Create conf 1nano /e">
 
 
 
@@ -133,7 +133,7 @@
   };
 </script>
 
-  <title>Linux Command | See the out</title>
+  <title>v2ray | See the out</title>
   
 
 
@@ -278,7 +278,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/10/Linux Command line/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/17/v2ray/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Wesley">
@@ -295,7 +295,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux Command
+          <h1 class="post-title" itemprop="name headline">v2ray
               
             
           </h1>
@@ -320,7 +320,7 @@
                 
               
 
-              <time title="Post created: 2018-08-10 23:30:00 / Updated at: 23:41:05" itemprop="dateCreated datePublished" datetime="2018-08-10T23:30:00+08:00">2018-08-10</time>
+              <time title="Post created: 2018-08-17 11:10:18 / Updated at: 14:45:08" itemprop="dateCreated datePublished" datetime="2018-08-17T11:10:18+08:00">2018-08-17</time>
             
 
             
@@ -358,10 +358,36 @@
       
 
       
-        <p>find using port</p>
+        <h1 id="install"><a href="#install" class="headerlink" title="install"></a>install</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash &lt;(curl -L -s https://install.direct/go.sh)</span><br></pre></td></tr></table></figure>
 <ul>
-<li>netstat -lntp</li>
+<li>remove default conf file and replace with a new one</li>
 </ul>
+<ol>
+<li>remove</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm /etc/v2ray/config.json</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>create a new one</li>
+</ol>
+<p><a href="https://intmainreturn0.com/v2ray-config-gen/" target="_blank" rel="noopener">Online Create conf</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/v2ray/config.json</span><br></pre></td></tr></table></figure>
+<p>Paste it</p>
+<ol start="3">
+<li>start server</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service v2ray start</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>server status</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service v2ray status</span><br></pre></td></tr></table></figure>
+<h2 id="shell-version-from-reference"><a href="#shell-version-from-reference" class="headerlink" title="shell version from reference"></a>shell version from reference</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://install.direct/go.sh</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo bash go.sh</span><br></pre></td></tr></table></figure>
+<ul>
+<li>config file  <code>/etc/v2ray/config.json</code></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start v2ray  start</span><br><span class="line"></span><br><span class="line">sudo systemctl stop v2ray   stop</span><br><span class="line"></span><br><span class="line">sudo systemctl restart v2ray   restart</span><br></pre></td></tr></table></figure>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://www.flyzy2005.com/v2ray/how-to-build-v2ray/" target="_blank" rel="noopener">https://www.flyzy2005.com/v2ray/how-to-build-v2ray/</a><br><a href="https://toutyrater.github.io/prep/install.html" target="_blank" rel="noopener">https://toutyrater.github.io/prep/install.html</a></p>
+<h3 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h3><p><a href="https://233blog.com/post/16/" target="_blank" rel="noopener">https://233blog.com/post/16/</a></p>
 
       
     </div>
@@ -389,8 +415,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/10/deletea-certain-extension-from-a-folder/" rel="next" title="deletea-certain-extension-from-a-folder">
-                <i class="fa fa-chevron-left"></i> deletea-certain-extension-from-a-folder
+              <a href="/2018/08/17/shadowsocks/" rel="next" title="shadowsocks">
+                <i class="fa fa-chevron-left"></i> shadowsocks
               </a>
             
           </div>
@@ -399,8 +425,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/17/shadowsocks/" rel="prev" title="shadowsocks">
-                shadowsocks <i class="fa fa-chevron-right"></i>
+              <a href="/2018/08/17/filebrowser/" rel="prev" title="filebrowser">
+                filebrowser <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -446,8 +472,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -475,6 +510,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#install"><span class="nav-number">1.</span> <span class="nav-text">install</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#shell-version-from-reference"><span class="nav-number">1.1.</span> <span class="nav-text">shell version from reference</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">1.2.</span> <span class="nav-text">Reference</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Others"><span class="nav-number">1.2.1.</span> <span class="nav-text">Others</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
