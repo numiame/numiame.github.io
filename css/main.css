@@ -1530,6 +1530,9 @@ pre .javascript .function {
   border-bottom: 1px dashed #999;
   cursor: help;
 }
+.post-symbolscount {
+  display: inline-block;
+}
 .post-meta-divider {
   margin: 0 0.5em;
 }
@@ -1849,7 +1852,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #939475;
+  background: #9a45c7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1943,7 +1946,6 @@ img:hover {
 .post-toc .nav-item {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
   line-height: 1.8;
 }
 .post-toc .nav .nav-child {
